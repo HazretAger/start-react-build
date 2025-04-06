@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Moon, Sun } from "lucide-react";
-import Toggler from "../../../shared/ui/Toggler/Toggler";
+import Toggler from "@shared/ui/Toggler/Toggler";
 
 const ThemeToggler = () => {
     const [isDark, setIsDark] = useState<boolean>(false);
