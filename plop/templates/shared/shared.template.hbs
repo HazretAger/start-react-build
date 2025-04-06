@@ -1,0 +1,9 @@
+import { I{{name}} } from "./types";
+import cls from "classnames";
+import styles from "./{{name}}.module.scss";
+
+const {{name}} = ({ content }: I{{name}}) => {
+    return <div className={cls(styles.{{name}})}>{content}</div>
+}
+
+export default {{name}};

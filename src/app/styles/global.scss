@@ -1,0 +1,8 @@
+@import url('./light.scss');
+@import url('./dark.scss');
+
+body {
+    background: var(--background);
+    color: var(--text-primary);
+}
+  
