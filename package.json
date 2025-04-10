@@ -12,10 +12,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.8.4",
     "classnames": "^2.5.1",
     "lucide-react": "^0.487.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-query": "^3.39.3",
     "react-router-dom": "^7.4.1",
     "sass": "^1.86.2",
     "zustand": "^5.0.3"
