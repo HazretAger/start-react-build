@@ -3,7 +3,7 @@ import ThemeToggler from "../../../features/ThemeToggler/ui/ThemeToggler";
 import styles from "./Layout.module.scss"
 
 const Layout = () => {
-    return <>
+    return <div className={styles.wrapper}>
     <header className={styles.header}>
         <ThemeToggler />
     </header>
@@ -15,7 +15,7 @@ const Layout = () => {
     <footer className={styles.footer}>
         footer
     </footer>
-    </>
+    </div>
 }
 
 export default Layout;

@@ -1,8 +1,12 @@
 @import url('./light.scss');
 @import url('./dark.scss');
 
-body {
-    background: var(--background);
-    color: var(--text-primary);
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+  color: var(--text-primary);
 }
-  

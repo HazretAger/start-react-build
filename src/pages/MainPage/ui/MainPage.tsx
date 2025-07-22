@@ -1,5 +1,4 @@
 import { getUserByIdQuery } from '@entities/User/api/queries/getUserByIdQuery';
-import Button from '@shared/ui/Button/Button';
 import { useEffect } from 'react';
 
 const MainPage = () => {
@@ -9,11 +8,7 @@ const MainPage = () => {
     console.log(test, 'test');
   }, [test]);
 
-  return (
-    <div>
-      <Button content={'Привет'} />
-    </div>
-  );
+  return <div></div>;
 };
 
 export default MainPage;
