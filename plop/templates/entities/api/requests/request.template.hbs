@@ -1,0 +1,5 @@
+import { $API } from '@shared/config/api';
+
+export const get{{name}}ById = async (id: number) => {
+  return await $API.get(`/{{name}}s/${id}`);
+};

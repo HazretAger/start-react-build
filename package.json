@@ -8,6 +8,7 @@
     "build": "tsc -b && vite build",
     "plop:pages": "plop --plopfile plop/generators/pages.generator.js",
     "plop:shared": "plop --plopfile plop/generators/shared.generator.js",
+    "plop:entities": "plop --plopfile plop/generators/entities.generator.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },

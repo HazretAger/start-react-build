@@ -1,0 +1,7 @@
+import { useQuery } from 'react-query';
+import { get{{name}}ById } from '../requests/get{{name}}ById';
+
+export const get{{name}}ByIdQuery = (id: number) => {
+  const { data } = useQuery(['{{camelCase name}}', id], () => get{{name}}ById(id));
+  return data;
+};
