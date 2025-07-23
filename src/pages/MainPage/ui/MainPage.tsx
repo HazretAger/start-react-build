@@ -8,7 +8,7 @@ const MainPage = () => {
     console.log(test, 'test');
   }, [test]);
 
-  return <div></div>;
+  return <div>MainPage</div>;
 };
 
 export default MainPage;

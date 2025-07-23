@@ -1,13 +1,13 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { MainPage } from "../../pages/MainPage/index.lazy";
-import { ErrorPage } from "../../pages/ErrorPage/index.lazy";
-import Layout from "../../shared/ui/Layout/Layout";
-
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { MainPage } from '../../pages/MainPage/index.lazy';
+import { ErrorPage } from '../../pages/ErrorPage/index.lazy';
+import { AuthPage } from '@pages/AuthPage/index.lazy';
+import Layout from '../../shared/ui/Layout/Layout';
 
 export const Router = () => {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: '/',
       element: <Layout />,
       children: [
         {
@@ -15,14 +15,16 @@ export const Router = () => {
           element: <MainPage />,
         },
         {
-          path: "error",
+          path: 'error',
           element: <ErrorPage />,
         },
-      ]
+      ],
+    },
+    {
+      path: 'auth',
+      element: <AuthPage />,
     },
   ]);
 
-  return <RouterProvider router={router} />
-}
-
-  
+  return <RouterProvider router={router} />;
+};

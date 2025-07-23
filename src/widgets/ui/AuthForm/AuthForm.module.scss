@@ -1,0 +1,31 @@
+.authForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.fieldsWrapper,
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  background: hsl(0, 0%, 100%);
+  padding: 45px;
+  border-radius: 35px;
+  width: 40%;
+}
+
+.fieldsWrapper {
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}

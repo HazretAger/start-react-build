@@ -2,6 +2,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { Router } from './app/routes';
 import { QueryClient, QueryClientProvider } from 'react-query';
+import { ChakraProvider, defaultSystem } from '@chakra-ui/react';
 import './app/styles/global.scss';
 
 const queryClient = new QueryClient();
@@ -9,7 +10,9 @@ const queryClient = new QueryClient();
 createRoot(document.getElementById('root')!).render(
   <QueryClientProvider client={queryClient}>
     <StrictMode>
-      <Router />
+      <ChakraProvider value={defaultSystem}>
+        <Router />
+      </ChakraProvider>
     </StrictMode>
   </QueryClientProvider>
 );
